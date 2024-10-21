@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+}
+
+package sec02;
+
+//it is for class generation target (target path)
+option java_package = "com.berkay.models.sec02";

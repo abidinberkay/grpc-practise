@@ -1,0 +1,8 @@
+/Users/berkaysimsek/Projects/grpc-playground/src/main/java/com/berkay/grpc_playground/sec01/SimpleProtoDemo.java
+/Users/berkaysimsek/Projects/grpc-playground/src/main/java/com/berkay/grpc_playground/sec02/SimpleProtoDemo.java
+/Users/berkaysimsek/Projects/grpc-playground/src/main/java/com/berkay/grpc_playground/sec03/Lec02Serialization.java
+/Users/berkaysimsek/Projects/grpc-playground/target/generated-sources/protobuf/java/com/berkay/models/sec01/PersonOuterClass.java
+/Users/berkaysimsek/Projects/grpc-playground/target/generated-sources/protobuf/java/com/berkay/models/sec02/PersonOuterClass.java
+/Users/berkaysimsek/Projects/grpc-playground/target/generated-sources/protobuf/java/com/berkay/models/sec03/Person.java
+/Users/berkaysimsek/Projects/grpc-playground/target/generated-sources/protobuf/java/com/berkay/models/sec03/PersonOrBuilder.java
+/Users/berkaysimsek/Projects/grpc-playground/target/generated-sources/protobuf/java/com/berkay/models/sec03/PersonOuterClass.java
