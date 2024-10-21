@@ -11,6 +11,10 @@ public class Lec03PerformanceTest {
     private static final Logger log = LoggerFactory.getLogger(Lec03PerformanceTest.class);
     private static final ObjectMapper mapper = new ObjectMapper();
 
+
+    //IF YOU RUN MAIN METHOD YOU WILL SEE THAT PARSING PROTO IS SHORTER THAN JSON AND IT WILL OUTPUT TIME OF PARSING JSON/PROTO.
+    //PROTO IS ALWAYS SHORTER THAN JSON
+
     public static void main(String[] args) {
 
         var protoPerson = Person.newBuilder()
@@ -19,7 +23,7 @@ public class Lec03PerformanceTest {
                 .setEmail("sam@gmail.com")
                 .setEmployed(true)
                 .setSalary(1000.2345)
-                .setBankAccountNumber(123456789012L)
+            .setBankAccountNumber(123456789012L)
                 .setBalance(-10000)
                 .build();
         var jsonPerson = new JsonPerson("sam", 12, "sam@gmail.com", true, 1000.2345, 123456789012L, -10000);
@@ -27,10 +31,10 @@ public class Lec03PerformanceTest {
         json(jsonPerson);
         proto(protoPerson);
 
-//        for (int i = 0; i < 5; i++) {
-//            runTest("json", () -> json(jsonPerson));
-//            runTest("proto", () -> proto(protoPerson));
-//        }
+        for (int i = 0; i < 5; i++) {
+            runTest("json", () -> json(jsonPerson));
+            runTest("proto", () -> proto(protoPerson));
+        }
 
     }
 
@@ -56,7 +60,7 @@ public class Lec03PerformanceTest {
 
     private static void runTest(String testName, Runnable runnable){
         var start = System.currentTimeMillis();
-        for (int i = 0; i < 5_000_000; i++) {
+        for (int i = 0; i < 100; i++) {
             runnable.run();
         }
         var end = System.currentTimeMillis();
