@@ -8,4 +8,5 @@ https://www.udemy.com/course/grpc-the-complete-guide-for-java-developers/learn/l
 (do not change)
 
 option java_multiple_files = true; property makes that separate classes in a single protofile is generated separately or together in same file.
+creating separate files with this option is better for large projects in terms of modularization, readability and common OOP practises
 
