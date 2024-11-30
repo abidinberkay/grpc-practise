@@ -13,6 +13,7 @@ com\berkay\models\sec01\PersonOuterClass$Person$Builder.class
 com\berkay\models\sec02\PersonOuterClass$Person.class
 com\berkay\models\sec03\Person$1.class
 com\berkay\models\sec01\PersonOuterClass$Person$1.class
+com\berkay\grpc_playground\common\GrpcServer.class
 com\berkay\models\sec06\BankServiceGrpc$BankServiceBaseDescriptorSupplier.class
 com\berkay\models\sec06\BankServiceGrpc$BankServiceFileDescriptorSupplier.class
 com\berkay\models\sec02\PersonOuterClass$Person$1.class

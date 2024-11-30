@@ -16,4 +16,5 @@ message AccountBalance {
 
 service BankService {
   rpc GetAccountBalance(BalanceCheckRequest) returns (AccountBalance);
+  rpc berkay(AccountBalance) returns (BalanceCheckRequest);
 }
