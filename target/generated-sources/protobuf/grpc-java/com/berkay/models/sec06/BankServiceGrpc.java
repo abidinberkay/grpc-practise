@@ -46,37 +46,6 @@ public final class BankServiceGrpc {
     return getGetAccountBalanceMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.berkay.models.sec06.AccountBalance,
-      com.berkay.models.sec06.BalanceCheckRequest> getBerkayMethod;
-
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "berkay",
-      requestType = com.berkay.models.sec06.AccountBalance.class,
-      responseType = com.berkay.models.sec06.BalanceCheckRequest.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.berkay.models.sec06.AccountBalance,
-      com.berkay.models.sec06.BalanceCheckRequest> getBerkayMethod() {
-    io.grpc.MethodDescriptor<com.berkay.models.sec06.AccountBalance, com.berkay.models.sec06.BalanceCheckRequest> getBerkayMethod;
-    if ((getBerkayMethod = BankServiceGrpc.getBerkayMethod) == null) {
-      synchronized (BankServiceGrpc.class) {
-        if ((getBerkayMethod = BankServiceGrpc.getBerkayMethod) == null) {
-          BankServiceGrpc.getBerkayMethod = getBerkayMethod =
-              io.grpc.MethodDescriptor.<com.berkay.models.sec06.AccountBalance, com.berkay.models.sec06.BalanceCheckRequest>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "berkay"))
-              .setSampledToLocalTracing(true)
-              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.berkay.models.sec06.AccountBalance.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.berkay.models.sec06.BalanceCheckRequest.getDefaultInstance()))
-              .setSchemaDescriptor(new BankServiceMethodDescriptorSupplier("berkay"))
-              .build();
-        }
-      }
-    }
-    return getBerkayMethod;
-  }
-
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -131,13 +100,6 @@ public final class BankServiceGrpc {
         io.grpc.stub.StreamObserver<com.berkay.models.sec06.AccountBalance> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetAccountBalanceMethod(), responseObserver);
     }
-
-    /**
-     */
-    default void berkay(com.berkay.models.sec06.AccountBalance request,
-        io.grpc.stub.StreamObserver<com.berkay.models.sec06.BalanceCheckRequest> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getBerkayMethod(), responseObserver);
-    }
   }
 
   /**
@@ -174,14 +136,6 @@ public final class BankServiceGrpc {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetAccountBalanceMethod(), getCallOptions()), request, responseObserver);
     }
-
-    /**
-     */
-    public void berkay(com.berkay.models.sec06.AccountBalance request,
-        io.grpc.stub.StreamObserver<com.berkay.models.sec06.BalanceCheckRequest> responseObserver) {
-      io.grpc.stub.ClientCalls.asyncUnaryCall(
-          getChannel().newCall(getBerkayMethod(), getCallOptions()), request, responseObserver);
-    }
   }
 
   /**
@@ -205,13 +159,6 @@ public final class BankServiceGrpc {
     public com.berkay.models.sec06.AccountBalance getAccountBalance(com.berkay.models.sec06.BalanceCheckRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetAccountBalanceMethod(), getCallOptions(), request);
-    }
-
-    /**
-     */
-    public com.berkay.models.sec06.BalanceCheckRequest berkay(com.berkay.models.sec06.AccountBalance request) {
-      return io.grpc.stub.ClientCalls.blockingUnaryCall(
-          getChannel(), getBerkayMethod(), getCallOptions(), request);
     }
   }
 
@@ -238,18 +185,9 @@ public final class BankServiceGrpc {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetAccountBalanceMethod(), getCallOptions()), request);
     }
-
-    /**
-     */
-    public com.google.common.util.concurrent.ListenableFuture<com.berkay.models.sec06.BalanceCheckRequest> berkay(
-        com.berkay.models.sec06.AccountBalance request) {
-      return io.grpc.stub.ClientCalls.futureUnaryCall(
-          getChannel().newCall(getBerkayMethod(), getCallOptions()), request);
-    }
   }
 
   private static final int METHODID_GET_ACCOUNT_BALANCE = 0;
-  private static final int METHODID_BERKAY = 1;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -271,10 +209,6 @@ public final class BankServiceGrpc {
         case METHODID_GET_ACCOUNT_BALANCE:
           serviceImpl.getAccountBalance((com.berkay.models.sec06.BalanceCheckRequest) request,
               (io.grpc.stub.StreamObserver<com.berkay.models.sec06.AccountBalance>) responseObserver);
-          break;
-        case METHODID_BERKAY:
-          serviceImpl.berkay((com.berkay.models.sec06.AccountBalance) request,
-              (io.grpc.stub.StreamObserver<com.berkay.models.sec06.BalanceCheckRequest>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -301,13 +235,6 @@ public final class BankServiceGrpc {
               com.berkay.models.sec06.BalanceCheckRequest,
               com.berkay.models.sec06.AccountBalance>(
                 service, METHODID_GET_ACCOUNT_BALANCE)))
-        .addMethod(
-          getBerkayMethod(),
-          io.grpc.stub.ServerCalls.asyncUnaryCall(
-            new MethodHandlers<
-              com.berkay.models.sec06.AccountBalance,
-              com.berkay.models.sec06.BalanceCheckRequest>(
-                service, METHODID_BERKAY)))
         .build();
   }
 
@@ -357,7 +284,6 @@ public final class BankServiceGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new BankServiceFileDescriptorSupplier())
               .addMethod(getGetAccountBalanceMethod())
-              .addMethod(getBerkayMethod())
               .build();
         }
       }

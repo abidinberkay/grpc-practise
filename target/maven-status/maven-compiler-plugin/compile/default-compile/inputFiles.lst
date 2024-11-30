@@ -1,3 +1,4 @@
+C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\grpc_playground\common\Demo.java
 C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\grpc_playground\common\GrpcServer.java
 C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\grpc_playground\sec01\SimpleProtoDemo.java
 C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\grpc_playground\sec02\SimpleProtoDemo.java
@@ -5,6 +6,8 @@ C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\g
 C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\grpc_playground\sec03\Lec02Serialization.java
 C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\grpc_playground\sec03\Lec03PerformanceTest.java
 C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\grpc_playground\sec06\BankService.java
+C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\grpc_playground\sec06\GrpcClient.java
+C:\Users\Administrator\Desktop\Projects\grpc-practise\src\main\java\com\berkay\grpc_playground\sec06\repository\AccountRepository.java
 C:\Users\Administrator\Desktop\Projects\grpc-practise\target\generated-sources\protobuf\grpc-java\com\berkay\models\sec06\BankServiceGrpc.java
 C:\Users\Administrator\Desktop\Projects\grpc-practise\target\generated-sources\protobuf\java\com\berkay\models\sec01\PersonOuterClass.java
 C:\Users\Administrator\Desktop\Projects\grpc-practise\target\generated-sources\protobuf\java\com\berkay\models\sec02\PersonOuterClass.java

@@ -37,12 +37,10 @@ public final class BankServiceOuterClass {
       "\n\030sec06/bank-service.proto\022\005sec06\"-\n\023Bal" +
       "anceCheckRequest\022\026\n\016account_number\030\001 \001(\005" +
       "\"9\n\016AccountBalance\022\026\n\016account_number\030\001 \001" +
-      "(\005\022\017\n\007balance\030\002 \001(\0052\222\001\n\013BankService\022F\n\021G" +
-      "etAccountBalance\022\032.sec06.BalanceCheckReq" +
-      "uest\032\025.sec06.AccountBalance\022;\n\006berkay\022\025." +
-      "sec06.AccountBalance\032\032.sec06.BalanceChec" +
-      "kRequestB\033\n\027com.berkay.models.sec06P\001b\006p" +
-      "roto3"
+      "(\005\022\017\n\007balance\030\002 \001(\0052U\n\013BankService\022F\n\021Ge" +
+      "tAccountBalance\022\032.sec06.BalanceCheckRequ" +
+      "est\032\025.sec06.AccountBalanceB\033\n\027com.berkay" +
+      ".models.sec06P\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

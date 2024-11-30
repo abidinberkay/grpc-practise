@@ -27,6 +27,7 @@ com\berkay\grpc_playground\sec06\BankService.class
 com\berkay\models\sec06\BankServiceGrpc$BankServiceMethodDescriptorSupplier.class
 com\berkay\models\sec06\BankServiceGrpc$3.class
 com\berkay\grpc_playground\sec03\Lec03PerformanceTest.class
+com\berkay\grpc_playground\sec06\GrpcClient.class
 com\berkay\models\sec02\PersonOuterClass$Person$Builder.class
 com\berkay\grpc_playground\sec03\JsonPerson.class
 com\berkay\grpc_playground\sec03\Lec02Serialization.class
